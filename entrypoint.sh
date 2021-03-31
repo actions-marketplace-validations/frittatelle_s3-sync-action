@@ -48,6 +48,7 @@ cat <<EOF >> ~/.aws/config
 region=${AWS_REGION}
 EOF
 
+ll
 
 # Sync using our dedicated profile and suppress verbose messages.
 # All other flags are optional via the `args:` directive.
