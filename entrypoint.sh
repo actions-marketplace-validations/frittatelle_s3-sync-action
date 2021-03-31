@@ -58,5 +58,6 @@ aws configure --profile s3-sync-action <<-EOF > /dev/null 2>&1
 null
 null
 null
+null
 text
 EOF
