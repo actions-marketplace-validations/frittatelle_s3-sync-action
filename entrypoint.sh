@@ -32,10 +32,8 @@ if [ -n "$AWS_S3_ENDPOINT" ]; then
   ENDPOINT_APPEND="--endpoint-url $AWS_S3_ENDPOINT"
 fi
 
-pwd
-
 # Create a crdedentials file with session token
-cat <<EOF >> ~/.aws/credentials
+cat <<EOF >> /github/workspace/.aws/credentials
 [s3-sync-action]
 aws_access_key_id=${AWS_ACCESS_KEY_ID}
 aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}
@@ -43,7 +41,7 @@ aws_session_token=${AWS_SESSION_TOKEN}
 region=${AWS_REGION}
 EOF
 # config file
-cat <<EOF >> ~/.aws/config
+cat <<EOF >> /github/workspace/.aws/config
 [profile s3-sync-action]
 region=${AWS_REGION}
 EOF
