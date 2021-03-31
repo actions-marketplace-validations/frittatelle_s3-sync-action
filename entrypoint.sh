@@ -48,7 +48,7 @@ cat <<EOF >> ~/.aws/config
 region=${AWS_REGION}
 EOF
 
-ls -a
+ls -a /home/runner/work/ghactions/ghactions
 
 # Sync using our dedicated profile and suppress verbose messages.
 # All other flags are optional via the `args:` directive.
