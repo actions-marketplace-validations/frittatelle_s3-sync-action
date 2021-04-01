@@ -4,4 +4,4 @@ This simple action uses the [vanilla AWS CLI](https://docs.aws.amazon.com/cli/in
 
 The project is based on https://github.com/jakejarvis/s3-sync-action but the entrypoint file is modified so that the profile in ~/.aws/credentials contains also the session token.
 
-USE IT @master
+Specify AWS_SESSION_TOKEN from the Vocareum platform in github secrets
